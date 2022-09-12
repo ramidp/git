@@ -1,0 +1,377 @@
+@charset "UTF-8";
+/*---------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0; }
+
+html body {
+  background-color: white;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif; }
+  html body .ad1 {
+    margin-bottom: 1.25em;
+    text-align: center; }
+    html body .ad1 img {
+      object-fit: cover;
+      width: 100%;
+      height: 120px; }
+  html body a {
+    color: #2d584a; }
+
+header .logo {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em; }
+  header .logo a {
+    display: inline-block; }
+header .redes-sociales {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+  header .redes-sociales a {
+    border-radius: 100%;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    line-height: 2.1em;
+    background-color: #e0bdbd;
+    color: white;
+    margin-right: 0.5em;
+    margin-left: 0.5em; }
+    header .redes-sociales a.youtube {
+      background-color: #2d584a; }
+      header .redes-sociales a.youtube:hover {
+        background: #578072; }
+    header .redes-sociales a.facebook {
+      background-color: #2d584a; }
+      header .redes-sociales a.facebook:hover {
+        background: #578072; }
+    header .redes-sociales a.instagram {
+      background-color: #2d584a; }
+      header .redes-sociales a.instagram:hover {
+        background: #578072; }
+header .menu {
+  padding-left: 1.25em;
+  background: #2d584a;
+  margin-bottom: 1.25em; }
+  header .menu ul {
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    display: flex; }
+    header .menu ul a {
+      text-decoration: none;
+      color: white;
+      display: inline-block;
+      padding: 1em 1.25em;
+      font-size: 0.9em; }
+      header .menu ul a .first-item {
+        font-weight: bold; }
+      header .menu ul a:hover {
+        background: #578072; }
+
+.main .titulo-seccion h3, .sidebar .titulo-seccion h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  font-weight: bold;
+  padding-bottom: 0.62em;
+  border-bottom: 4px solid #2d584a;
+  margin-bottom: 1.1em; }
+
+.main .paginacion {
+  padding: 1em; }
+  .main .paginacion > div {
+    padding: 0; }
+  .main .paginacion ul {
+    list-style: none;
+    overflow: hidden;
+    margin-bottom: 1.25em;
+    font-size: 1em; }
+    .main .paginacion ul li {
+      float: left;
+      background: #3b3b3b;
+      color: white;
+      margin-right: 0.62em;
+      font-size: 1.125em;
+      line-height: 1.125em; }
+      .main .paginacion ul li.disabled {
+        padding: 0.62em 0.937em;
+        font-size: 1.125em;
+        line-height: 1.125em; }
+      .main .paginacion ul li a {
+        background: #2d584a;
+        color: #fff;
+        line-height: 1.125em;
+        display: inline-block;
+        padding: 0.62em 0.937em;
+        text-decoration: none; }
+        .main .paginacion ul li a:hover {
+          background: #508a77;
+          text-decoration: none; }
+.main .wp-pagenavi {
+  margin-bottom: 1.25em; }
+  .main .wp-pagenavi .pages, .main .wp-pagenavi span {
+    background: #3b3b3b;
+    color: white;
+    font-size: 1.125em;
+    margin-right: 0.62em;
+    line-height: 1.125em;
+    padding: 0.62em 0.937em; }
+  .main .wp-pagenavi a {
+    background: #2d584a;
+    color: #fff;
+    font-size: 1.125em;
+    display: inline-block;
+    padding: 0.62em 0.937em;
+    text-decoration: none;
+    margin-right: 0.62em; }
+    .main .wp-pagenavi a:hover {
+      background: #508a77;
+      text-decoration: none; }
+.main .posts .post {
+  margin-bottom: 1.85em; }
+  .main .posts .post .contenedor {
+    height: auto;
+    background: white;
+    box-shadow: 0px 0px 5px 0px; }
+    .main .posts .post .contenedor .thumb img {
+      width: 100%;
+      vertical-align: top;
+      height: auto;
+      max-width: 100%;
+      padding: 5px;
+      vertical-align: top; }
+    .main .posts .post .contenedor .info {
+      padding: 1.25em;
+      /* overflow hidden sirve para que si se pasa el texto, se corta y no sobresale de la tarjeta
+      por otro lado ponerle un max height y un height FIJA el tamaño de la tarjeta, ya que estamos poniendo estos
+      comandos para muchas tarjetas y queremos que todas midan lo mismo
+      el overflow auto le crea un SCROLL en caso de que sea mas grande el texto de la tarjeta */ }
+      .main .posts .post .contenedor .info .titulo {
+        line-height: 1.125em;
+        margin-bottom: 1em;
+        font-size: 1.5em;
+        text-decoration: none;
+        font-weight: 700; }
+      .main .posts .post .contenedor .info a {
+        color: #3b3b3b;
+        text-decoration: none; }
+        .main .posts .post .contenedor .info a:hover {
+          text-decoration: underline; }
+      .main .posts .post .contenedor .info .fecha {
+        color: #909090;
+        font-size: 0.875em;
+        margin-bottom: 1.25em; }
+      .main .posts .post .contenedor .info .extracto {
+        font-family: "Raleway", sans-serif;
+        color: #292929;
+        font-size: 1em;
+        height: 8.125em;
+        max-height: 8.125em;
+        line-height: 1.75em;
+        margin-bottom: 0.625em;
+        overflow: hidden; }
+        .main .posts .post .contenedor .info .extracto:hover {
+          overflow: auto; }
+      .main .posts .post .contenedor .info .texto {
+        font-family: "Raleway", sans-serif;
+        color: #292929;
+        font-size: 1em;
+        line-height: 1.75em; }
+        .main .posts .post .contenedor .info .texto img {
+          max-width: 100%;
+          padding: 0;
+          vertical-align: top; }
+      .main .posts .post .contenedor .info .categorias {
+        margin-bottom: 0.625em; }
+        .main .posts .post .contenedor .info .categorias ul {
+          list-style: none; }
+          .main .posts .post .contenedor .info .categorias ul li {
+            display: inline-block; }
+        .main .posts .post .contenedor .info .categorias a {
+          color: #909090;
+          font-size: 1em;
+          font-weight: bolder;
+          margin-right: 0.2em; }
+          .main .posts .post .contenedor .info .categorias a:hover {
+            color: #2d584a;
+            text-decoration: none; }
+
+.sidebar .widget {
+  margin-bottom: 2.5em; }
+  .sidebar .widget .titulo-seccion .redes-sociales2 {
+    overflow: hidden;
+    display: flex;
+    justify-content: center; }
+    .sidebar .widget .titulo-seccion .redes-sociales2 a {
+      width: 33%;
+      padding: 1.25em;
+      text-align: center;
+      background: black;
+      color: white;
+      display: inline-block;
+      text-decoration: none; }
+      .sidebar .widget .titulo-seccion .redes-sociales2 a i, .sidebar .widget .titulo-seccion .redes-sociales2 a span {
+        padding-right: 2px;
+        padding-left: 2px; }
+      .sidebar .widget .titulo-seccion .redes-sociales2 a.youtube {
+        background-color: #1c3d32; }
+        .sidebar .widget .titulo-seccion .redes-sociales2 a.youtube:hover {
+          background: #578072; }
+      .sidebar .widget .titulo-seccion .redes-sociales2 a.facebook {
+        background-color: #2d584a; }
+        .sidebar .widget .titulo-seccion .redes-sociales2 a.facebook:hover {
+          background: #578072; }
+      .sidebar .widget .titulo-seccion .redes-sociales2 a.instagram {
+        background-color: #2d584a; }
+        .sidebar .widget .titulo-seccion .redes-sociales2 a.instagram:hover {
+          background: #578072; }
+      .sidebar .widget .titulo-seccion .redes-sociales2 a i {
+        width: 100%;
+        font-size: 1.875em;
+        margin-bottom: 0.5em; }
+  .sidebar .widget.boletin .formulario {
+    background: #1c3d32;
+    padding: 1.25em;
+    text-align: center; }
+    .sidebar .widget.boletin .formulario label {
+      color: white;
+      margin-bottom: 1.25em;
+      display: block;
+      font-size: 1.15em; }
+    .sidebar .widget.boletin .formulario input[type="email"] {
+      color: #909090;
+      text-align: center;
+      padding: 0.35em;
+      font-size: 1.125em;
+      border-radius: 3px;
+      width: 100%;
+      border: none;
+      margin-bottom: 1.25em; }
+    .sidebar .widget.boletin .formulario input[type="submit"] {
+      background: #2d584a;
+      border-radius: 3px;
+      padding: 0.625em 1.875em;
+      border: none;
+      color: white; }
+      .sidebar .widget.boletin .formulario input[type="submit"]:hover {
+        background: #578072; }
+.sidebar .contenedor-ad {
+  text-align: center; }
+  .sidebar .contenedor-ad a {
+    display: inline-block;
+    width: 100%;
+    height: 500px; }
+
+footer img {
+  object-fit: cover;
+  width: 100%;
+  height: 120px;
+  margin-bottom: 1.25em; }
+footer .menu {
+  background: #2d584a; }
+  footer .menu ul {
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    display: flex; }
+    footer .menu ul a {
+      text-decoration: none;
+      color: white;
+      display: inline-block;
+      padding: 1em 1.25em;
+      font-size: 0.9em; }
+      footer .menu ul a .first-item {
+        font-weight: bold; }
+      footer .menu ul a:hover {
+        background: #578072; }
+footer .copyright p {
+  font-size: 1em;
+  font-style: italic;
+  color: black;
+  padding: 0.625em;
+  text-align: center; }
+
+@media screen and (max-width: 768px) {
+  header .logo {
+    display: flex;
+    justify-content: center; }
+  header .redes-sociales {
+    display: none; }
+  header .menu ul {
+    text-align: center; }
+    header .menu ul li {
+      float: none; }
+
+  .main .posts .post .contenedor .info .extracto {
+    height: 1000px; }
+  .main .paginacion ul {
+    display: flex;
+    font-size: 0.8em; }
+
+  .sidebar {
+    display: none; }
+
+  footer .menu ul {
+    text-align: center; }
+    footer .menu ul li {
+      float: none; } }
+@media screen and (max-width: 576px) {
+  .main .paginacion ul {
+    display: flex;
+    font-size: 0.65em; } }
+@media screen and (max-width: 376px) {
+  .main .paginacion ul {
+    display: flex;
+    font-size: 0.55em; } }
+.main .comentarios {
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+  padding: 1.25em;
+  background: #fff;
+  box-shadow: 0px 0px 5px 0px; }
+
+.main .comentarios .comment-respond .comment-reply-title {
+  font-weight: bold;
+  line-height: 1.125em;
+  margin-bottom: 1.25; }
+
+.main .comentarios .comment-respond .comment-form p {
+  margin-bottom: 1.25em; }
+
+.main .comentarios .comment-respond .comment-form input[type="text"], input[type="email"] {
+  padding: 0.62em;
+  width: 100%; }
+
+.main .comentarios .comment-respond .comment-form label {
+  font-weight: bolder;
+  width: 100%; }
+
+.main .comentarios .comment-form textarea {
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  height: 100px;
+  min-height: 100px;
+  max-height: 200px; }
+
+.main .comentarios .comment-respond .comment-form .form-submit .submit {
+  background: #2d584a;
+  border-radius: 3px;
+  padding: 0.625em 1.875em;
+  border: none;
+  color: #fff;
+  font-weight: bold; }
+  .main .comentarios .comment-respond .comment-form .form-submit .submit:hover {
+    background: #55927e; }
+
+.main .comentarios .comment-respond .comment-form .comment-form-cookies-consent {
+  display: flex;
+  flex-direction: row; }
+
+.main .comentarios .comment-respond .comment-form .comment-form-cookies-consent label {
+  padding-left: 1em; }
+
+/*# sourceMappingURL=tema1-wordpress.css.map */

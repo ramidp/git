@@ -1,0 +1,45 @@
+// Variables de Colores
+$fondo: white;
+$azul_primario: #2d584a;
+$azul_secundario: #508a77;
+$gris_oscuro: #3b3b3b;
+$gris_claro: #909090;
+$texto: #292929;
+$verde: #2d584a;
+$verde-hover:#578072;
+$verde-oscuro: #1c3d32;
+
+//Variables de Fonts
+$font-family2: 'Raleway', sans-serif;
+$font-size: 16px;
+
+/*---------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+html body {
+    background-color: $fondo;
+    font-size: $font-size;
+    font-family: $font-family2;
+    .ad1 {
+        margin-bottom: 1.25em;
+        text-align: center;
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 120px;
+        }
+    }
+    a {
+        color: $azul_primario;
+    }
+}
+
+@import "header";
+@import "main";
+@import "sidebar";
+@import 'footer';
+@import 'mediaqueries';
+@import 'comentarios';

@@ -1,0 +1,68 @@
+header {
+    .logo {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        a {
+            display: inline-block;
+        }
+    }
+    .redes-sociales {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        a {
+            border-radius: 100%;
+            width: 2em;
+            height: 2em;
+            text-align: center;
+            line-height: 2.1em;
+            background-color: rgb(224, 189, 189);
+            color: white;
+            margin-right: 0.5em;
+            margin-left: 0.5em;
+            &.youtube {
+                background-color: $verde;
+                &:hover {
+                    background: $verde-hover;
+                }
+            }
+            &.facebook{
+                background-color: $verde;
+                &:hover {
+                    background: $verde-hover;
+                }
+            }
+            &.instagram{
+                background-color: $verde;
+                &:hover {
+                    background: $verde-hover;
+                }
+            }
+        }
+    }
+    .menu {
+        padding-left: 1.25em;
+        background: $azul_primario;
+        margin-bottom: 1.25em;
+         ul {
+            list-style: none;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            display: flex; 
+            a  {
+                text-decoration: none;
+                color: white;
+                display: inline-block;
+                padding: 1em 1.25em;
+                font-size: 0.9em;
+                .first-item {
+                font-weight: bold;
+            }                
+                &:hover {
+                    background: $verde-hover;
+                }
+            }
+         }
+    }
+}

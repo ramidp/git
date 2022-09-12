@@ -1,0 +1,61 @@
+git init (Inicia y crea una carpeta .git)
+
+
+1- Para ver Status
+git status
+Crear commits por cada cambio grueso.
+
+Staging Index (Fase antes de enviar archivos a una nueva version)
+
+2- Agregar por cada cambio
+
+git add xxxx.html (para agregarlo)
+
+git add . (todos los archivos modifica, en vez de 1)
+
+
+3- Le agregas un comentario a cada cambio
+git commit -m "algun comentario" (comentario del porque hiciste el cambio o que afectará)
+
+
+4- Como quitar un archivo del Staging Index.
+git rm --cached index.html (Elmina este archivo)
+
+5- El archivo .gitignore
+Sirve para que la consola ignore esos archivos y no cree commits (Ejemplo un txt o imagen que esté en la carpeta)
+
+6-Ver el log
+git log
+git log --stat
+git log --oneline (muestra todo en 1 linea)(El mas comodo)
+git log --graph (Muestra un grafico para cuando tengamos varias ramas)
+git diff (Muestra diferencias entre lo que teniamos con lo que tenemos actualmente)
+
+
+7- Revert
+git revert XXXXX (Donde va el nro del commit)
+
+8- Branch (Ramas)
+git branch
+git checkout -b "xxxx" se crea una rama
+
+Podes crear Ramas y eso RAMIFICAR el archivo o LOS archivos con los cuales estas trabajando.
+Por ejemplo:
+Yo tengo 2 archivos
+main.html y experimento.html
+Si en MASTER grabo solo main.html, experimento.html no existe (Lo borra) ademas de que vuelve al codigo grabado en MASTER.
+Si en una branch nueva llamada "experimento" grabo los 2 archivos, en esa rama, ADEMAS de poder tener otro codigo, también RECREA el archivo experimento.html
+
+git merge xxxxx.html
+
+Si queremos mezclar las ramas, nos posicionamos en MASTER y ponemos "git merge experimento" (La rama creada) y asi las combina en 1.
+
+git branch -d xxxxxx para borrar branches
+
+
+// Los cambios los podemos ver en Visual Studio Code
+
+
+git pull origin master  ---> Esto pullea cambios DE LA WEB (Origin) a master que es la carpeta nuestra
+
+git push origin master ----> Esto pushea cambios de MASTER a la WEB.

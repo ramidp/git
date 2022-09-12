@@ -1,0 +1,166 @@
+.main, .sidebar {
+    .titulo-seccion {
+        h3 {
+            font-family: $font-family2;
+            font-size: 1.5em;
+            line-height: 1.5em;
+            font-weight: bold;
+            padding-bottom: 0.62em;
+            border-bottom: 4px solid $verde;
+            margin-bottom: 1.1em;
+        }
+    }
+}
+.main {
+    .paginacion {
+        padding: 1em;
+        > div {
+            padding: 0;
+        }
+        ul {
+            list-style: none;
+            overflow: hidden;
+            margin-bottom: 1.25em;
+            font-size: 1em;
+            li {
+                float: left;
+                background: $gris_oscuro ;
+                color: white;
+                margin-right: 0.62em;
+                font-size: 1.125em;
+                line-height: 1.125em;
+                &.disabled {
+                    padding: 0.62em 0.937em;
+                    font-size: 1.125em;
+                    line-height: 1.125em;
+                }
+                a {
+                    background: $azul_primario;
+                    color: #fff;
+                    line-height: 1.125em;
+                    display:inline-block;
+                    padding: 0.62em 0.937em;
+                    text-decoration: none;
+                    &:hover {
+                        background: $azul_secundario;
+                        text-decoration: none;
+                    } 
+                }
+            }
+        }
+    }
+    .wp-pagenavi {
+        margin-bottom: 1.25em;
+        .pages,span {
+            background: $gris_oscuro;
+            color: white;
+            font-size: 1.125em;
+            margin-right: 0.62em;
+            line-height: 1.125em;
+            padding: 0.62em 0.937em;
+        }
+        a {
+            background: $azul_primario;
+            color: #fff;
+            font-size: 1.125em;
+            display:inline-block;
+            padding: 0.62em 0.937em;
+            text-decoration: none;
+            margin-right: 0.62em;
+            &:hover {
+                background: $azul_secundario;
+                text-decoration: none;
+                ;
+            }
+        }
+    }
+    .posts {
+        .post {
+            margin-bottom: 1.85em;
+            .contenedor {
+                height: auto;
+                background: white;
+                box-shadow: 0px 0px 5px 0px;
+                .thumb {
+                    img {
+                        width: 100%;
+                        vertical-align: top;
+                        height: auto;
+                        max-width: 100%;
+                        padding: 5px;
+                        vertical-align: top;
+                    }   
+                }
+                .info {
+                    padding: 1.25em;
+                    .titulo {
+                        line-height: 1.125em;
+                        margin-bottom: 1em;
+                        font-size: 1.5em;
+                        text-decoration: none;
+                        font-weight: 700;
+                    }
+                    a {
+                        color: $gris_oscuro;
+                        text-decoration: none;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                    .fecha {
+                        color: $gris_claro;
+                        font-size: 0.875em;
+                        margin-bottom: 1.25em;
+                        
+                    }
+                    /* overflow hidden sirve para que si se pasa el texto, se corta y no sobresale de la tarjeta
+                    por otro lado ponerle un max height y un height FIJA el tamaño de la tarjeta, ya que estamos poniendo estos
+                    comandos para muchas tarjetas y queremos que todas midan lo mismo
+                    el overflow auto le crea un SCROLL en caso de que sea mas grande el texto de la tarjeta */
+                    .extracto {
+                        font-family: $font-family2;
+                        color: $texto;
+                        font-size: 1em;
+                        height: 8.125em;
+                        max-height: 8.125em;
+                        line-height: 1.75em;
+                        margin-bottom: 0.625em;
+                        overflow: hidden;
+                        &:hover {
+                            overflow: auto;
+                        }
+                    }
+                    .texto {
+                        font-family: $font-family2;
+                        color: $texto;
+                        font-size: 1em;
+                        line-height: 1.75em;
+                        img {
+                            max-width: 100%;
+                            padding: 0;
+                            vertical-align: top;
+                        } 
+                    }
+                    .categorias {
+                        margin-bottom: 0.625em;
+                        ul {
+                            list-style: none;
+                            li {
+                                display: inline-block;
+                            }}
+                            a {
+                            color: $gris_claro;
+                            font-size: 1em;
+                            font-weight: bolder;
+                            margin-right: 0.2em;
+                            &:hover {
+                                color: $azul_primario;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    } 
+}

@@ -1,0 +1,66 @@
+@media screen and (max-width: 768px) {
+  header {
+    .logo {
+        display:flex;
+        justify-content: center;
+    }
+    .redes-sociales {
+        display: none;
+    }
+    .menu {
+        ul {
+            text-align: center;
+            li {
+                float: none; // No tiene float porque lo reemplaza el inline-block, pero lo dejamos igual
+            }
+        }
+    }
+  }
+  .main {
+        .posts {
+            .post {
+                .contenedor {
+                    .info {
+                        .extracto {
+                            height: 1000px;
+                        }
+                    }
+                }
+            }
+        }
+        .paginacion ul {
+            display: flex;
+            font-size: 0.8em;
+        }
+    }
+    .sidebar {
+        display: none;
+    }
+    footer {
+        .menu {
+            ul {
+                text-align: center;
+                li {
+                    float: none; // No tiene float porque lo reemplaza el inline-block, pero lo dejamos igual
+                }
+            }
+        }
+        
+    }
+}
+@media screen and (max-width: 576px) {
+    .main {
+        .paginacion ul {
+            display: flex;
+            font-size: 0.65em;
+        }
+    }
+}
+@media screen and (max-width: 376px) {
+    .main {
+        .paginacion ul {
+            display: flex;
+            font-size: 0.55em;
+        }
+    }
+}
